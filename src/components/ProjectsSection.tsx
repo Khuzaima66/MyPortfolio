@@ -10,7 +10,7 @@ const projects = [
     title: "E-Commerce Mobile App",
     description: "A full-featured React Native e-commerce application with user authentication, product catalog, shopping cart, and payment integration.",
     technologies: ["React Native", "Redux", "Firebase", "Stripe API"],
-    image: "/placeholder.svg",
+    image: "/images/image1.png",
     githubUrl: "#",
     liveUrl: "#"
   },
@@ -19,7 +19,7 @@ const projects = [
     title: "Social Media Dashboard",
     description: "Cross-platform social media management app with real-time analytics, post scheduling, and multi-account support.",
     technologies: ["React Native", "TypeScript", "AsyncStorage", "REST API"],
-    image: "/placeholder.svg",
+    image: "/images/image3.png",
     githubUrl: "#",
     liveUrl: "#"
   },
@@ -28,7 +28,7 @@ const projects = [
     title: "Fitness Tracking App",
     description: "Health and fitness tracking application with workout planning, progress monitoring, and social features.",
     technologies: ["React Native", "SQLite", "Push Notifications", "Google Fit API"],
-    image: "/placeholder.svg",
+    image: "/images/image2.png",
     githubUrl: "#",
     liveUrl: "#"
   },
@@ -37,7 +37,7 @@ const projects = [
     title: "Food Delivery Platform",
     description: "Complete food delivery solution with real-time tracking, payment processing, and restaurant management system.",
     technologies: ["React Native", "Node.js", "MongoDB", "Socket.io"],
-    image: "/placeholder.svg",
+    image: "/images/image4.png",
     githubUrl: "#",
     liveUrl: "#"
   }
@@ -132,7 +132,7 @@ const ProjectsSection = () => {
           ))}
         </div>
 
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -147,7 +147,7 @@ const ProjectsSection = () => {
               View All Projects
             </Button>
           </motion.div>
-        </motion.div>
+        </motion.div> */}
       </div>
     </section>
   );

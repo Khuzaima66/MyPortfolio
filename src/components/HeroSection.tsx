@@ -49,6 +49,7 @@ const HeroSection = () => {
             <Button 
               size="lg" 
               className="bg-gradient-primary hover:shadow-glow transition-all duration-300 border-0"
+              onClick={() => window.open('mailto:khuzaima2462@gmail.com', '_self')}
             >
               <Mail className="w-4 h-4 mr-2" />
               Get In Touch

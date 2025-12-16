@@ -44,9 +44,9 @@ const ContactSection = () => {
           {contactInfo.map((contact, index) => {
             const IconComponent = contact.icon;
             const gradientClass = contact.color === 'primary' ? 'bg-gradient-primary' : 'bg-gradient-accent';
-            
+
             return (
-              <Card 
+              <Card
                 key={index}
                 className="bg-gradient-card border-card-border shadow-card hover:shadow-glow transition-all duration-300 animate-scale-up cursor-pointer"
                 style={{ animationDelay: `${index * 0.1}s` }}
@@ -69,23 +69,23 @@ const ContactSection = () => {
           <div className="p-8 md:p-12 text-center">
             <h3 className="text-2xl font-bold text-foreground mb-4">Ready to Start Your Project?</h3>
             <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
-              I'm passionate about creating innovative mobile applications that deliver exceptional user experiences. 
+              I'm passionate about creating innovative mobile applications that deliver exceptional user experiences.
               Whether you're a startup or an established company, I'm here to help bring your vision to life.
             </p>
-            
+
             <div className="flex flex-wrap justify-center gap-4">
-              <Button 
-                size="lg" 
+              <Button
+                size="lg"
                 className="bg-gradient-primary hover:shadow-glow transition-all duration-300 border-0"
                 onClick={() => window.open('mailto:khuzaima2462@gmail.com', '_self')}
               >
                 <Send className="w-4 h-4 mr-2" />
                 Send Message
               </Button>
-              
-              <Button 
-                size="lg" 
-                variant="outline" 
+
+              <Button
+                size="lg"
+                variant="outline"
                 className="border-card-border hover:bg-card/50 transition-all duration-300"
                 onClick={() => window.open('tel:03126680990', '_self')}
               >
@@ -100,6 +100,7 @@ const ContactSection = () => {
                 size="sm"
                 variant="outline"
                 className="w-12 h-12 rounded-full border-card-border hover:bg-primary hover:text-primary-foreground transition-all duration-300"
+                onClick={() => window.open("https://github.com/Khuzaima66", "_blank")}
               >
                 <Github className="w-5 h-5" />
               </Button>
@@ -107,6 +108,12 @@ const ContactSection = () => {
                 size="sm"
                 variant="outline"
                 className="w-12 h-12 rounded-full border-card-border hover:bg-primary hover:text-primary-foreground transition-all duration-300"
+                onClick={() =>
+                  window.open(
+                    "https://www.linkedin.com/in/khuzaima-abdul-rehman-b28339234/",
+                    "_blank"
+                  )
+                }
               >
                 <Linkedin className="w-5 h-5" />
               </Button>
